@@ -17,3 +17,11 @@ clients browser or in the server or even what is the script trying to accomplish
 - **Scheduled Scripts** are for server-side scripts that should run at a specific time or on a recurring schedule.
 
 - **RESTlet Scripts** are for server-side scripts that should execute when called over HTTP by an application external to NetSuite.
+
+Each of these, include one or more **Entry Points**, exclusive to that type. They represent the point in time in
+which the system grants control of the NetSuite app to our script. When you include entry points in your scripts,
+you are telling the system to do something when that entry point is invoked. This "something" actions are called
+**Entry Point Functions**.
+
+Entry points are basically the types of events able to trigger your script, for example, in Client Script Type's
+this events can happen anytime during a browser session. Two of them are _fieldChanged_, which represents a change to the value of a field and _pageInit_, which represents the loading of a page.
