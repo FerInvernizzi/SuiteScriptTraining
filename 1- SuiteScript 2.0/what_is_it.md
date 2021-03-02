@@ -24,4 +24,9 @@ you are telling the system to do something when that entry point is invoked. Thi
 **Entry Point Functions**.
 
 Entry points are basically the types of events able to trigger your script, for example, in Client Script Type's
-this events can happen anytime during a browser session. Two of them are _fieldChanged_, which represents a change to the value of a field and _pageInit_, which represents the loading of a page.
+this events can happen anytime during a browser session. Two of them are _fieldChanged_, which represents a change to the value of a field and _pageInit_, which represents the loading of a page. In comparison, a Scheduled Script Type has only one
+entry point, called _execute_, representing the point at which a schedule executes the script or a user acts manually to execute the script.
+
+## Modules
+
+SuiteScript has a **Modular Architecture**
